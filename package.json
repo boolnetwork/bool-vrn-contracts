@@ -1,0 +1,66 @@
+{
+  "name": "bool-vrn-contracts",
+  "version": "1.0.0",
+  "description": "Solidity contracts facilitate the generation of Verifiable Random Numbers (VRN) via Bool Network.",
+  "scripts": {
+    "slither": "slither . --solc-remaps '@openzeppelin=node_modules/@openzeppelin' --exclude naming-convention,external-function,low-level-calls",
+    "lint": "yarn solhint 'contracts/**/*.sol'",
+    "lint:fix": "yarn solhint 'contracts/**/*.sol' --fix",
+    "format": "yarn prettier --write .",
+    "coverage": "yarn hardhat coverage",
+    "deploy": "yarn hardhat deploy",
+    "test": "yarn hardhat test",
+    "typechain": "yarn hardhat typechain",
+    "local:start": "yarn hardhat node --no-deploy --write false"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/boolnetwork/bool-vrn-contracts.git"
+  },
+  "keywords": [
+    "Web3",
+    "Blockchain",
+    "Solidity",
+    "Randomness"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boolnetwork/bool-vrn-contracts/issues"
+  },
+  "homepage": "https://github.com/boolnetwork/bool-vrn-contracts#readme",
+  "devDependencies": {
+    "@matterlabs/hardhat-zksync-deploy": "^0.6.3",
+    "@matterlabs/hardhat-zksync-solc": "^0.4.0",
+    "@matterlabs/hardhat-zksync-verify": "^0.1.8",
+    "@nomicfoundation/hardhat-chai-matchers": "^1.0.6",
+    "@nomicfoundation/hardhat-verify": "^1.1.0",
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@nomiclabs/hardhat-etherscan": "^3.1.7",
+    "@nomiclabs/hardhat-waffle": "^2.0.1",
+    "@nomiclabs/hardhat-web3": "^2.0.0",
+    "@openzeppelin/contracts": "^4.5.0",
+    "@typechain/ethers-v5": "^10.0.0",
+    "@typechain/hardhat": "^6.0.0",
+    "@types/chai": "^4.3.4",
+    "@types/mocha": "^10.0.1",
+    "@types/node": "^17.0.13",
+    "chai": "^4.3.7",
+    "dotenv": "^16.0.3",
+    "ethereum-waffle": "^4.0.10",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.14.4",
+    "hardhat-contract-sizer": "^2.4.0",
+    "hardhat-deploy": "^0.11.26",
+    "hardhat-deploy-ethers": "^0.3.0-beta.13",
+    "hardhat-gas-reporter": "^1.0.7",
+    "mocha": "^10.2.0",
+    "prettier": "^2.4.1",
+    "prettier-plugin-solidity": "^1.0.0-beta.19",
+    "solhint": "^3.3.6",
+    "solidity-coverage": "^0.8.4",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.0.0",
+    "typescript": "^4.9.4",
+    "web3": "^1.0.0-beta.36"
+  }
+}
