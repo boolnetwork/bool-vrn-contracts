@@ -24,11 +24,11 @@ This section provides an overview of the Bool Network's Verifiable Random Number
 
 ### Key components
 
-The following components play crucial roles in the operation of the VRNPort contract and the generation of random numbers within the BOOL Network ecosystem:
+The following components play crucial roles in the operation of the VRNPort contract and the generation of random numbers within the Bool Network ecosystem:
 
 - **VRNPort:** Responsible for random number generation, `VRNPort` interfaces with the Dynamic Hidden Committee (DHC) service. It initiates randomness requests, triggers corresponding events, and validates the received random numbers and credentials from the DHC service.
 
-- **BOOL Network:** Serving as both a blockchain and a monitoring and validating system, Bool Network records DHC information. It facilitates the forwarding of requests from VRNPort on multiple external networks and ensures the submission of request results back to the respective network.
+- **Bool Network:** Serving as both a blockchain and a monitoring and validating system, Bool Network records DHC information. It facilitates the forwarding of requests from VRNPort on multiple external networks and ensures the submission of request results back to the respective network.
 
 - **DHC Service:** The Dynamic Hidden Committee (DHC) service plays a critical role in generating random numbers. It identifies requests by monitoring events emitted by Bool Network and calculates random numbers based on request IDs. The DHC service subsequently submits the generated random numbers, along with their generation methods, as proofs to Bool Network.
 
