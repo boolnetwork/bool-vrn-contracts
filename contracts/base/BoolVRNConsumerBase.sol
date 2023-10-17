@@ -16,6 +16,7 @@ abstract contract BoolVRNConsumerBase is IBoolVRNConsumerBase {
     /** Core Function */
     /**
      * @notice Requests a random number from the VRNPort contract.
+     * @param fee Service fee per request.  Call 'getVRNPortFee' function to get the value.
      * @param requestId The ID of the request.
      */
     function _requestRandomNumber(uint256 fee) internal returns (uint256 requestId) {

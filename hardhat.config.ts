@@ -70,6 +70,13 @@ const config: HardhatUserConfig = {
             chainId: 59140,
             zksync: false,
         },
+        scroll_sepolia: {
+            url: "https://sepolia-rpc.scroll.io/",
+            accounts: accounts(),
+            saveDeployments: true,
+            chainId: 534351,
+            zksync: false,
+        },
         zksync_goerli: {
             url: process.env.ZKSYNC_GOERLI_RPC_URL || "https://testnet.era.zksync.dev",
             accounts: accounts(),
